@@ -1,23 +1,24 @@
 # TODO
 
-- [ ] Gmail API enabled
-- [ ] Google Calendar API enabled
-- [ ] OAuth Desktop Client created
-- [ ] Test Users added
-- [ ] credentials.json saved in private folder
-- [ ] token.json regenerated after scope update
-- [ ] uv sync completed
-- [ ] config.py pasted
-- [ ] gmail_service.py pasted
-- [ ] calendar_service.py pasted
-- [ ] meeting_parser.py pasted
-- [ ] main.py pasted
-- [ ] README.md pasted
-- [ ] PRD.md pasted
-- [ ] PLAN.md pasted
-- [ ] TODO.md pasted
-- [ ] LLM_API_KEY set in PowerShell
-- [ ] free time scenario tested
-- [ ] busy time scenario tested
-- [ ] regular email scenario tested
-- [ ] no secrets committed to GitHub
+- [x] Gmail API enabled
+- [x] Google Calendar API enabled
+- [x] OAuth Desktop Client created
+- [x] Test Users added
+- [x] credentials.json saved locally (not committed to GitHub)
+- [x] token.json regenerated after scope update
+- [x] uv sync completed
+- [x] config.py — paths via environment variables
+- [x] gmail_service.py — fetch, reply, mark as processed
+- [x] calendar_service.py — freebusy check, create event
+- [x] meeting_parser.py — LLM analysis via Gemini API
+- [x] main.py — full agent workflow
+- [x] README.md — setup instructions and screenshots
+- [x] PRD.md — product requirements document
+- [x] PLAN.md — development plan by phases
+- [x] TODO.md — task tracking
+- [x] GEMINI_API_KEY set as environment variable
+- [x] free time scenario tested — event created successfully
+- [x] busy time scenario tested — decline email sent
+- [x] regular email scenario tested — skipped correctly
+- [x] missing date scenario tested — skipped correctly
+- [x] no secrets committed to GitHub (verified with .gitignore)

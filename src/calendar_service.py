@@ -1,8 +1,6 @@
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from googleapiclient.discovery import build
-from datetime import datetime, timedelta
-from googleapiclient.discovery import build
 
 
 def build_calendar_service(creds):

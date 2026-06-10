@@ -105,15 +105,21 @@ uv sync
 
 פקודה זו מתקינה אוטומטית את כל הספריות המוגדרות ב-`pyproject.toml`.
 
-### 3. הגדרת משתנה סביבה עבור Gemini
+### 3. הגדרת משתני סביבה
 
 ב-Windows PowerShell:
-
 ```powershell
 $env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+$env:GOOGLE_CREDENTIALS_PATH="C:\הנתיב\שלך\credentials.json"
+$env:GOOGLE_TOKEN_PATH="C:\הנתיב\שלך\token.json"
 ```
 
-יש לוודא ששם משתנה הסביבה תואם בדיוק למה שהקוד מצפה לו.
+ב-Mac/Linux:
+```bash
+export GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+export GOOGLE_CREDENTIALS_PATH="/הנתיב/שלך/credentials.json"
+export GOOGLE_TOKEN_PATH="/הנתיב/שלך/token.json"
+```
 
 ### 4. הוספת קובץ OAuth
 

@@ -2,15 +2,14 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-# טעינת קובץ הסודות (.env)
+# טעינת משתני סביבה מקובץ .env
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-# נתיב לתיקיית המפתחות הפרטית שלך
-PRIVATE_DIR = Path(r"C:\study\private_google")
 
-CREDENTIALS_FILE = PRIVATE_DIR / "credentials.json"
-TOKEN_FILE = PRIVATE_DIR / "token.json"
+# נתיבים לקבצי האימות — נקראים ממשתני סביבה, או מהתיקייה הנוכחית כברירת מחדל
+CREDENTIALS_FILE = Path(os.environ.get("GOOGLE_CREDENTIALS_PATH", "credentials.json"))
+TOKEN_FILE = Path(os.environ.get("GOOGLE_TOKEN_PATH", "token.json"))
 
 SCOPES = [
     "https://www.googleapis.com/auth/gmail.modify",
