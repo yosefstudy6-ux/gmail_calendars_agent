@@ -1,0 +1,23 @@
+# TODO
+
+- [ ] Gmail API enabled
+- [ ] Google Calendar API enabled
+- [ ] OAuth Desktop Client created
+- [ ] Test Users added
+- [ ] credentials.json saved in private folder
+- [ ] token.json regenerated after scope update
+- [ ] uv sync completed
+- [ ] config.py pasted
+- [ ] gmail_service.py pasted
+- [ ] calendar_service.py pasted
+- [ ] meeting_parser.py pasted
+- [ ] main.py pasted
+- [ ] README.md pasted
+- [ ] PRD.md pasted
+- [ ] PLAN.md pasted
+- [ ] TODO.md pasted
+- [ ] LLM_API_KEY set in PowerShell
+- [ ] free time scenario tested
+- [ ] busy time scenario tested
+- [ ] regular email scenario tested
+- [ ] no secrets committed to GitHub
