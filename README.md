@@ -50,9 +50,10 @@ l06_agent/
 │   ├── PLAN.md
 │   └── TODO.md
 ├── images/
-│   ├── terminal-run.png
-│   ├── created-event.png
-│   └── decline-email.png
+│   ├── run screenshot.png
+│   ├── בקשה לפגישת קפה במייל.png
+│   ├── לא ניתן לקיים את הפגישה מייל חוזר.png
+│   └── נקבעה פגישת קפה.png
 └── src/
     ├── config.py
     ├── gmail_service.py
@@ -148,15 +149,18 @@ uv run main.py
 
 ## צילומי מסך
 
+### 1. ריצת המערכת בטרמינל
+![Terminal output](./images/run%20screenshot.png)
 
-### ריצת המערכת בטרמינל
+### 2. בקשת פגישה במייל
+![Incoming Request](./images/בקשה%20לפגישת%20קפה%20במייל.png)
 
+### 3. מייל תגובה אוטומטי (סירוב)
+![Automatic decline email](./images/לא%20ניתן%20לקיים%20את%20הפגישה%20מייל%20חוזר.png)
 
-### אירוע שנוצר ביומן
-![Created calendar event](./images/created-event.png)
+### 4. אירוע פגישה שנקבע בהצלחה
+![Meeting Scheduled](./images/נקבעה%20פגישת%20קפה.png)
 
-### מייל תגובה אוטומטי
-![Automatic decline email](./images/decline-email.png)
 
 ## אבטחה
 
