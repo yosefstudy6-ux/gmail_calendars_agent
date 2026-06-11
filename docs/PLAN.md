@@ -32,3 +32,15 @@
 - [x] README.md עם כל הסעיפים הנדרשים
 - [x] docs/PRD.md, PLAN.md, TODO.md
 - [x] tests/test_cases.md עם 4 תרחישי בדיקה מתועדים
+## עקרונות פיתוח שנשמרו
+
+- **Single Responsibility**: כל מודול אחראי על שירות אחד בלבד
+- **Open/Closed**: ניתן להוסיף שירותי מייל/יומן חדשים ללא שינוי הלוגיקה הראשית
+- **Dependency Inversion**: main.py מקבל services כ-objects, לא יוצר אותם ישירות
+- **DRY**: חילוץ Base64, ניקוי מיילים, בניית time ranges — כולם בפונקציות ייעודיות
+
+## לקחים מהפיתוח
+
+- LLM עם temperature=0.0 מחזיר תוצאות הרבה יותר עקביות
+- auto-discover model פתר בעיה של API שינויים בין גרסאות Gemini
+- חשוב לנרמל זמן (HH:MM → HH:MM:SS) לפני בדיקת calendar — גורם לבאג שקשה לאבחן

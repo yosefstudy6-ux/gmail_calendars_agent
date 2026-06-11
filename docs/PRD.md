@@ -68,6 +68,27 @@ if is_meeting == True AND time is busy → send decline email
 - Gmail בלבד (לא Outlook)
 - OAuth2 Desktop Client — לא Service Account
 - Python 3.10+ עם uv לניהול תלויות
+## סיכוני פרויקט ומיטיגציה
+
+| סיכון | הסתברות | השפעה | מיטיגציה |
+|---|---|---|---|
+| שינוי ב-Gemini API | בינונית | גבוהה | פונקציית auto-discover מודל |
+| שינוי ב-Gmail API scopes | נמוכה | גבוהה | OAuth2 Desktop — לא Service Account |
+| הצפת מיילים לעיבוד | נמוכה | בינונית | Label PROCESSED_BY_AGENT מונע כפילות |
+| False Positive — מייל שאינו פגישה | נמוכה | נמוכה | LLM + temperature=0.0 + is_meeting flag |
+
+## הרחבות עתידיות אפשריות
+
+- **ריצה מתוזמנת** — הפעלה אוטומטית כל X דקות ע"י cron/scheduler
+- **תמיכה ב-Outlook** — אבסטרקציה של שכבת המייל
+- **ממשק ניהול** — dashboard להצגת מיילים שעובדו
+- **שפות נוספות** — הרחבת ה-Prompt לשפות נוספות מעבר לעברית ואנגלית
+
+## מדדי הצלחה
+
+- דיוק זיהוי פגישות: 100% בבדיקות שבוצעו (4/4)
+- זמן עיבוד מייל בודד: < 10 שניות
+- אפס secrets שהועלו ל-GitHub
 
 
 
