@@ -38,7 +38,8 @@
 - GitHub לצורך ניהול קוד והגשה
 
 ## מבנה הפרויקט
-
+```text
+````
 l06_agent/
 ├── README.md
 ├── pyproject.toml
@@ -64,6 +65,7 @@ l06_agent/
     ├── calendar_service.py
     ├── meeting_parser.py
     └── workflow.py
+    
 
 ## קבצים מרכזיים
 
