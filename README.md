@@ -83,7 +83,11 @@ l06_agent/
 
 - `src/config.py`  
   מכיל הגדרות מערכת, שמות labels, scopes, נתיבי קבצים והגדרות נוספות.
+- `src/workflow.py`  
+  תרשים הזרימה ההגיוני של הסוכן — Scan → Parse → Decide → Act.
 
+- `prompts/gemini_meeting_parser_prompt.md`  
+  תיעוד ה-Prompt שנשלח ל-Gemini כולל 3 גרסאות ואבולוציה של השיפורים.
 ## דרישות מוקדמות
 
 לפני הרצה יש לוודא:
