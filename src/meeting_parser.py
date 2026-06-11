@@ -57,7 +57,7 @@ def _get_best_model(api_key):
                 return None
                 
             # מנסה לבחור את המודלים החכמים ביותר מהרשימה שחזרה
-            for pref in ["gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-1.5-pro", "gemini-1.0-pro", "gemini-pro"]:
+            for pref in ["gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-2.0-flash", "gemini-1.5-pro", "gemini-2.5-flash", "gemini-1.0-pro", "gemini-pro"]:
                 if pref in valid_models:
                     return pref
                     
