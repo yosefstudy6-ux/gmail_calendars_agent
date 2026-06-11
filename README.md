@@ -39,16 +39,20 @@
 
 ## מבנה הפרויקט
 
-```text
 l06_agent/
 ├── README.md
 ├── pyproject.toml
+├── .env.example
 ├── .gitignore
 ├── main.py
 ├── docs/
 │   ├── PRD.md
 │   ├── PLAN.md
 │   └── TODO.md
+├── prompts/
+│   └── gemini_meeting_parser_prompt.md
+├── tests/
+│   └── test_cases.md
 ├── images/
 │   ├── run screenshot.png
 │   ├── בקשה לפגישת קפה במייל.png
@@ -58,8 +62,8 @@ l06_agent/
     ├── config.py
     ├── gmail_service.py
     ├── calendar_service.py
-    └── meeting_parser.py
-```
+    ├── meeting_parser.py
+    └── workflow.py
 
 ## קבצים מרכזיים
 
